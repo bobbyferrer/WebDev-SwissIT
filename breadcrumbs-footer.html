@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <style>
+     /* footer {
+       position: fixed;
+       bottom: 0;
+       width: 100%;
+     } */
+
+     .datepicker-date-display {
+       background: #ad1457;
+     }
+
+     .datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+      color: #ad1457;
+     }
+   </style>
+  <title>Breadcrumbs & Footer</title>
+</head>
+<body>
+  <!-- Breadcrumbs -->
+  <div class="navbar-fixed">
+    <nav class="pink darken-4">
+      <div class="nav-wrapper">
+        <div class="container">
+         <a href="breadcrumbs-footer.html" class="brand-logo">SwissIt</a>
+         <ul class="right hide-on-med-and-down">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#contact">Contact</a></li>
+         </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <section class="section">
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="images/img1.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  
+   
+ <div class="container">
+   <section class="section scrollspy" id="home">
+    <form>
+      <div class="input-field">
+        <input type="text" class="datepicker">
+        <label for="date">Choose a Date</label>
+      </div>
+      <div class="input-field">
+        <input type="text" class="timepicker">
+        <label for="time">Choose a Time</label>
+      </div>
+    </form>
+   </section>
+  
+
+  <div class="row">
+    <div class="col s12">
+      <div class="input-field col s12">
+        <i class="material-icons pink-text text-darken-4 prefix">textsms</i>
+         <input type="text" id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input">Autocomplete</label>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Modal Trigger -->
+ <a class="waves-effect waves-red white pink-text text-darken-4 btn modal-trigger" href="#modal1">Modal</a>
+  <!-- Modal Trigger -->
+  <a class="waves-effect pink darken-4 waves-light btn modal-trigger" href="#modal2">Modal</a>
+  <br><br>
+  <div class="row">
+    <div class="col s12">
+      <video class="responsive-video" width="100%" controls>
+        <source src="videos/" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <!-- Media, Images -->
+  <div class="row">
+    <div class="col s12 m6">
+      <img src="images/img1.jpg" class="responsive-img" alt="">
+    </div>
+    <div class="col s12 m6">
+      <img src="images/img2.jcirclepg" alt="" class="responsive-img ">
+    </div>
+  </div>
+
+  <section class="section scrollspy" id="about">
+    <!-- MaterialBoxed -->
+<div class="row">
+  <div class="col s12 m6">
+    <img src="images/img4.jpg" alt="" class="materialboxed responsive-img">
+  </div>
+  <div class="col s12 m6">
+    <img src="images/img5.jpg" alt="" data-caption="KTM Duke 125" class="materialboxed responsive-img">
+  </div>
+</div>
+  </section>
+
+
+<section class="section">
+  <div class="row">
+    <div class="col s12">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="images/img1.jpg" alt="">
+            <!-- Center Align Caption -->
+            <div class="caption center-align">
+              <h3 class="grey-text text-lighten-4">Center Caption</h3>
+              <h5 class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, vero!</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/img2.jpg" alt="">
+            <!-- Center Align Caption -->
+            <div class="caption left-align">
+              <h3 class="grey-text text-lighten-4">Left Caption</h3>
+              <h5 class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, vero!</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/img4.jpg" alt="">
+            <!-- Center Align Caption -->
+            <div class="caption right-align">
+              <h3 class="grey-text text-lighten-4">Right Caption</h3>
+              <h5 class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, vero!</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/img5.jpg" alt="">
+            <!-- Center Align Caption -->
+            <div class="caption center-align">
+              <h3 class="grey-text text-lighten-4">Center Caption</h3>
+              <h5 class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, vero!</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <div style="height: 500px;"></div> -->
+
+  
+
+  <div id="modal2" class="modal bottom-sheet">
+    <div class="modal-content pink lighten-4 white-text">
+      <h4>Modal 2</h4>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="video-container">
+            <iframe width="400" height="372" src="https://www.youtube.com/embed/W6NZfCO5SIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eos iure iusto facere hic exercitationem vitae fuga aut. Dolorem reprehenderit minima velit tempore facilis ipsa voluptates deleniti maxime qui molestias.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium reprehenderit fuga voluptatum et voluptatibus deleniti non magnam suscipit totam officia aliquid cum, adipisci minima dicta soluta! Consectetur sit sed ab rem nostrum corrupti reiciendis vero expedita dicta itaque, provident beatae molestias iure eos quis recusandae qui dolores. Assumenda, quibusdam quos quia quis necessitatibus aspernatur consequuntur sequi, officiis ipsam accusantium id asperiores enim nemo ipsum magni suscipit temporibus, unde autem quisquam rerum provident distinctio aliquid sunt saepe. Doloremque voluptatem nesciunt voluptates soluta vitae dicta quasi dolores sed tempora consequatur. Alias necessitatibus dolor deleniti dolorum qui itaque eum sint, aliquam ex ratione? Voluptates facere sed dolores placeat recusandae enim consectetur dignissimos voluptatum ut architecto at ratione perspiciatis ad, esse voluptas. Consectetur fugiat cum, nihil soluta minima eligendi aperiam, quaerat rem ipsam debitis impedit. Quibusdam quos est facere, ipsam similique eveniet. Laudantium quas qui magnam culpa corrupti libero vero sed! Commodi, in atque?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+ <div id="modal1" class="modal modal-fixed-footer">
+   <div class="modal-content">
+     <h4>Modal</h4>
+     <div class="video-container">
+      <iframe width="662" height="372" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ea. Rerum harum dolores magnam? Voluptatum sint quis excepturi labore ratione explicabo laboriosam nemo reprehenderit provident hic velit veniam necessitatibus quisquam, distinctio id temporibus, laudantium reiciendis aliquam corrupti, est inventore! Ex nulla, debitis nostrum iste pariatur dolorum adipisci tenetur assumenda! Magni obcaecati sequi, ipsum iusto consectetur accusamus nobis perferendis nesciunt sapiente quae, mollitia maxime. Qui, tempora eligendi! Sunt culpa illo odit dolorum eaque. Ut cupiditate obcaecati, aut veniam quidem consequuntur maiores voluptatem distinctio neque tempore. Tempore minima, at, recusandae quo voluptatum ad ea a libero tempora ex asperiores. Facilis, voluptatibus doloribus.</p>
+   </div>
+   <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+  
+ </div>
+<!-- collapsible -->
+ <ul class="collapsible popout">
+   <li>
+     <div class="collapsible-header">
+       <i class="material-icons">group_work</i> First
+     </div>
+     <div class="collapsible-body">
+       <span>This is the first area</span>
+     </div>
+   </li>
+   <li>
+     <div class="collapsible-header">
+       <i class="material-icons">help</i> Second
+     </div>
+     <div class="collapsible-body">
+       <span>This is the second area</span>
+     </div>
+   </li>
+   <li>
+     <div class="collapsible-header">
+       <i class="material-icons">info</i> Thrid
+     </div>
+     <div class="collapsible-body">
+       <span>This is the Thrid area</span>
+     </div>
+   </li>
+ </ul>
+  
+ </div>
+
+
+  
+
+  <!-- Footer -->
+  <footer class="page-footer pink darken-2 scrollspy" id="contact">
+   <div class="container">
+     <div class="row">
+       <div class="col s12 m6">
+         <h5 class="grey-text text-lighten-3">About Us</h5>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, dolore. Minima incidunt quam veritatis dignissimos id natus mollitia aspernatur voluptas eius quasi corporis ex esse, eaque velit optio tempora hic.</p>
+       </div>
+       <div class="col s12 m4 offset-m2">
+         <h5 class="grey-text text-lighten-3">Links</h5>
+         <ul>
+           <li>
+             <a href="" class="white-text">Link 1</a>
+           </li>
+           <li>
+             <a href="" class="white-text">Link 2</a>
+           </li>
+           <li>
+             <a href="" class="white-text">Link 3</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+   <div class="footer-copyright pink darken-4">
+     <div class="container">
+       Copyright &copy; 2022
+       <a href="" class="grey-text text-lighten-3 right">Term & Conditions</a>
+     </div>
+   </div>
+  </footer>
+
+
+   <!-- Jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // Date picker init
+    $('.datepicker').datepicker({
+      autoClose: false,
+      yearRange: 50
+    });
+    // Timepicker Init
+    $('.timepicker').timepicker();
+
+    // Autocomplete
+    $('input.autocomplete').autocomplete({
+      data: {
+        'Apple': null,
+        'Microsoft': null,
+        'Google': 'https://www.google.com/'
+      },
+      limit: 2,
+      minLength: 2
+    });
+
+    // Modal
+    $('.modal').modal({
+      opacity: 0.5,
+      preventScrolling: false
+    });
+
+    // Materialboxed
+    $('.materialboxed').materialbox({
+      inDuration: 1000,
+      outDuration: 1500
+    });
+
+    // Slider
+    $('.slider').slider();
+
+    // Scrollspy init
+    $('.scrollspy').scrollSpy();
+    // Parallax init
+    $('.parallax').parallax();
+    // Collapsible init
+    $('.collapsible').collapsible({
+      accordion: false
+    });
+  });
+</script>
+</body>
+</html>
